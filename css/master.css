@@ -53,6 +53,11 @@ a {
   min-height: 100vh;
 }
 
+::selection {
+  background-color: var(--blue-color);
+  color: white;
+}
+
 /* Start Side-Bar */
 
 .sidebar {
@@ -203,6 +208,10 @@ a {
 
 /* Start Content */
 
+.content {
+  overflow: hidden;
+}
+
 .content h1 {
   margin: 20px 20px 40px;
 }
@@ -221,6 +230,7 @@ a {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -438,8 +448,8 @@ a {
 
 /* Start Latest Tasks */
 .latest-tasks .task-row:not(:last-of-type) {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #eee;
 }
 
@@ -465,4 +475,302 @@ a {
 }
 /* End Latest Tasks */
 
+/* Start Latest Uploads */
+
+.latest-uploads ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+/* End Latest Uploads */
+
+/* Start Last Project Progress */
+
+.project-progress ul::before {
+  content: "";
+  height: 100%;
+  width: 2px;
+  background-color: var(--blue-color);
+  position: absolute;
+  left: 11px;
+}
+
+.project-progress ul li::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  display: block;
+  margin-right: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 1;
+}
+
+.project-progress ul li.done::before {
+  background-color: var(--blue-color);
+}
+
+.project-progress ul li.current::before {
+  animation: blinking 0.8s infinite alternate;
+  -webkit-animation: blinking 0.8s infinite alternate;
+}
+
+.project-progress .launch-icon {
+  width: 160px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0.1;
+}
+
+/* End Last Project Progress */
+
+/* Start Reminders */
+
+.reminders ul li .blue {
+  border-left: 2px solid var(--blue-color);
+}
+
+.reminders ul li .green {
+  border-left: 2px solid var(--green-color);
+}
+.reminders ul li .orange {
+  border-left: 2px solid var(--orange-color);
+}
+.reminders ul li .red {
+  border-left: 2px solid var(--red-color);
+}
+
+.reminders ul li .key {
+  width: 15px;
+  height: 15px;
+}
+
+/* End Reminders */
+
+/* Start Latest Post */
+
+.latest-post .avatar {
+  width: 48px;
+  height: 48px;
+}
+
+.latest-post .post-content {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  min-height: 140px;
+  line-height: 1.8;
+}
+
+.latest-post .post-stats span:last-child::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f086";
+  margin-right: 5px;
+}
+
+.latest-post .post-stats span:first-child::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f004";
+  margin-right: 5px;
+}
+
+/* End Latest Post */
+
+/* Start Social Media Stats */
+
+.social-media .box {
+  padding-left: 70px;
+}
+
+.social-media .box i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 52px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.social-media .box i:hover {
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+}
+
+.social-media .twitter {
+  background-color: rgb(29 161 242 / 20%);
+  color: #1da1f2;
+}
+
+.social-media .twitter a,
+.social-media .twitter i {
+  background-color: #1da1f2;
+}
+
+.social-media .facebook {
+  background-color: rgb(24 119 242 / 20%);
+  color: #1da1f2;
+}
+
+.social-media .facebook a,
+.social-media .facebook i {
+  background-color: #1877f2;
+}
+
+.social-media .youtube {
+  background-color: rgb(255 0 0 / 20%);
+  color: #ff0000;
+}
+.social-media .youtube a,
+.social-media .youtube i {
+  background-color: #ff0000;
+}
+
+.social-media .linkedin {
+  background-color: rgb(0 119 181 / 20%);
+  color: #0077b5;
+}
+.social-media .linkedin a,
+.social-media .linkedin i {
+  background-color: #0077b5;
+}
+
+/* End Social Media Stats */
+
+/* Start Projects */
+
+.projects .responsive-table {
+  overflow-x: auto;
+}
+
+.projects table {
+  min-width: 1000px;
+  border-spacing: 0;
+}
+.projects table td {
+  padding: 15px;
+}
+
+.projects tbody td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.projects table tbody tr td:last-child {
+  border-right: 1px solid #eee;
+}
+
+.projects table img:not(:first-child) {
+  margin-left: -20px;
+}
+
+.projects table img {
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.projects table tbody tr:hover td {
+  background-color: #faf7f7;
+}
+
+/* End Projects */
+
 /* End Content */
+
+/* Start Settings Page */
+
+.toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.toggle-switch {
+  position: relative;
+  background-color: #ccc;
+  width: 78px;
+  height: 32px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.toggle-switch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  font-weight: 900;
+  color: #aaa;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c";
+  left: 50px;
+  color: var(--blue-color);
+}
+
+/* End Settings Page */
+
+/* Start Animation */
+
+@keyframes blinking {
+  0% {
+    background-color: var(--blue-color);
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+/* End Animation */
