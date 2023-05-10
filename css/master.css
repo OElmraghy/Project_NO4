@@ -17,6 +17,10 @@
   outline: none;
 }
 
+::placeholder {
+  font-size: 13px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -760,7 +764,87 @@ a {
   color: var(--blue-color);
 }
 
-/* End Settings Pagesd  */
+.settings-page :disabled {
+  cursor: no-drop;
+  background-color: #f0f4f8;
+  color: #bbb;
+}
+
+.settings-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+/* Start Site Control */
+
+.settings-page .site-control .close-message {
+  resize: none;
+  min-height: 150px;
+  border: 1px solid #ccc;
+}
+
+/* End Site Control */
+
+/* Start General Info */
+.general-info .email input[type="email"] {
+  width: calc(100% - 80px);
+}
+/* End General Info */
+
+/* Start Security Info */
+
+.security-info .password a {
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.security-info .password a:hover {
+  background-color: var(--blue-alt-color);
+}
+
+/* End Security Info */
+
+/* Start Social Info */
+
+.settings-page .social-info input {
+  height: 40px;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  background-color: #f6f6f6;
+  border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  -ms-border-radius: 0 6px 6px 0;
+  -o-border-radius: 0 6px 6px 0;
+}
+
+.settings-page .social-info i {
+  height: 40px;
+  width: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  -webkit-border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  -ms-border-radius: 6px 0 0 6px;
+  -o-border-radius: 6px 0 0 6px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.settings-page .social-info > div:focus-within i {
+  color: black;
+}
+
+/* End Social Info */
+
+/* End Settings Page  */
 
 /* Start Animation */
 

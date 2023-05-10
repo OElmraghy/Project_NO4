@@ -370,6 +370,14 @@
   border: none;
 }
 
+.border-ccc {
+  border: 1px solid #ccc;
+}
+
+.border-b-eee {
+  border-bottom: 1px solid #eee;
+}
+
 .rad-6 {
   border-radius: 6px;
   -webkit-border-radius: 6px;
