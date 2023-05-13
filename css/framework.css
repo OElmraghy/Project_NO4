@@ -39,6 +39,10 @@
   display: grid;
 }
 
+.gap-10 {
+  gap: 10px;
+}
+
 .gap-20 {
   gap: 20px;
 }
@@ -77,6 +81,15 @@
 
 .btn-shape {
   padding: 4px 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.btn-shape-6 {
+  padding: 6px 10px;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;

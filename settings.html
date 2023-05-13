@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Settings</title>
-    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/framework.css" />
     <link rel="stylesheet" href="css/master.css" />
@@ -117,14 +117,14 @@
             <p class="c-grey fs-15 mt-0 mb-20">
               Control The Website If There Is Maintenance
             </p>
-            <div class="mb-15 between-flex">
+            <div class="mb-20 between-flex">
               <div class="info">
                 <span>Website Control</span>
                 <p class="fs-13 c-grey mt-5 mb-0">
                   Open/Close Website And Type The Reason
                 </p>
               </div>
-              <label class="center-flex">
+              <label>
                 <input class="toggle-checkbox" type="checkbox" checked />
                 <div class="toggle-switch"></div>
               </label>
@@ -189,14 +189,14 @@
                 <span>Password</span>
                 <p class="c-grey mt-5 fs-13">Last Change On 25/10/2021</p>
               </div>
-              <a href="#" class="btn-shape bg-blue c-white">Change</a>
+              <a href="#" class="btn-shape-6 bg-blue c-white">Change</a>
             </div>
             <div class="between-flex border-b-eee pb-15 mb-20">
               <div>
                 <span>Two-Factor Authentication </span>
                 <p class="c-grey mt-5 fs-13">Enable/Disable The Feature</p>
               </div>
-              <label class="center-flex">
+              <label>
                 <input type="checkbox" class="toggle-checkbox" checked />
                 <div class="toggle-switch"></div>
               </label>
@@ -206,7 +206,7 @@
                 <span>Devices</span>
                 <p class="c-grey mt-5 fs-13">Check The Login Devices List</p>
               </div>
-              <a href="#" class="btn-shape bg-eee c-black">Devices</a>
+              <a href="#" class="btn-shape-6 bg-eee c-black">Devices</a>
             </div>
           </div>
           <!-- End Security Info -->
@@ -238,7 +238,7 @@
                 placeholder="Linkedin Username"
               />
             </div>
-            <div class="d-flex align-center mb-15">
+            <div class="d-flex align-center">
               <i class="fa-brands fa-youtube center-flex c-grey"></i>
               <input
                 class="w-full"
@@ -248,6 +248,88 @@
             </div>
           </div>
           <!-- End Social Info -->
+          <!-- Start Widgets Control -->
+          <div class="widget-control bg-white p-20 rad-10">
+            <h2 class="mt-0 mb-10">Widgets Control</h2>
+            <p class="c-grey mt-0 mb-20 fs-15">Show/Hide Widgets</p>
+            <div class="d-flex align-center mb-20">
+              <input class="" type="checkbox" name="" id="one" checked />
+              <label for="one">Quick Draft</label>
+            </div>
+            <div class="d-flex align-center mb-20">
+              <input class="" type="checkbox" name="" id="two" checked />
+              <label for="two">Yearly Targets</label>
+            </div>
+            <div class="d-flex align-center mb-20">
+              <input class="" type="checkbox" name="" id="three" checked />
+              <label for="three">Tickets Statistics</label>
+            </div>
+            <div class="d-flex align-center mb-20">
+              <input class="" type="checkbox" name="" id="four" checked />
+              <label for="four">Latest News</label>
+            </div>
+            <div class="d-flex align-center mb-20">
+              <input class="" type="checkbox" name="" id="five" />
+              <label for="five">Latest Tasks</label>
+            </div>
+            <div class="d-flex align-center mb-20">
+              <input class="" type="checkbox" name="" id="six" checked />
+              <label for="six">Top Search Items</label>
+            </div>
+          </div>
+          <!-- End Widgets Control -->
+          <!-- Start Backup Manager -->
+          <div class="backup-manager bg-white p-20 rad-10">
+            <h2 class="mt-0 mb-10">Backup Manager</h2>
+            <p class="c-grey mt-0 mb-20 fs-15">
+              Control Backup Time And Location
+            </p>
+            <div class="backup-time d-flex align-center mb-20">
+              <input type="radio" name="time" id="daily" checked />
+              <label for="daily">Daily</label>
+            </div>
+            <div class="backup-time d-flex align-center mb-20">
+              <input type="radio" name="time" id="weekly" />
+              <label for="weekly">Weekly</label>
+            </div>
+            <div class="backup-time d-flex align-center mb-20">
+              <input type="radio" name="time" id="monthly" />
+              <label for="monthly">Monthly</label>
+            </div>
+            <div class="server d-flex gap-10">
+              <div class="backup-location d-flex align-center w-full">
+                <input type="radio" name="location" id="megaman" />
+                <label
+                  for="megaman"
+                  class="rad-10 mb-10 p-15 center-flex flex-column w-full"
+                >
+                  <i class="fa-solid fa-server d-block mb-10"></i>
+                  Megaman</label
+                >
+              </div>
+              <div class="backup-location d-flex align-center w-full">
+                <input type="radio" name="location" id="zero" checked />
+                <label
+                  for="zero"
+                  class="rad-10 mb-10 p-15 center-flex flex-column w-full"
+                >
+                  <i class="fa-solid fa-server d-block mb-10"></i>
+                  Zero
+                </label>
+              </div>
+              <div class="backup-location d-flex align-center w-full">
+                <input type="radio" name="location" id="sigma" />
+                <label
+                  for="sigma"
+                  class="rad-10 mb-10 p-15 center-flex flex-column w-full"
+                >
+                  <i class="fa-solid fa-server d-block mb-10"></i>
+                  Sigma
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- End Backup Manager -->
         </div>
       </div>
     </div>
