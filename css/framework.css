@@ -35,6 +35,10 @@
   flex-grow: 1;
 }
 
+.f-grow-2 {
+  flex-grow: 2;
+}
+
 .d-grid {
   display: grid;
 }
@@ -349,6 +353,10 @@
   .txt-c-mobile {
     text-align: center;
   }
+}
+
+.txt-right {
+  text-align: right;
 }
 
 .fs-13 {

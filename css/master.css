@@ -1024,8 +1024,153 @@ a {
 }
 
 /* End Backup Manager */
-
 /* End Settings Page  */
+
+/* Start Profile Page */
+
+/* Start Overview */
+
+.profile-page .overview .avatar {
+  width: 300px;
+}
+
+.profile-page .overview .avatar img {
+  width: 120px;
+  height: 120px;
+}
+
+.profile-page .overview .avatar .level {
+  width: 70%;
+  height: 6px;
+}
+
+.profile-page .overview .avatar .level .progress {
+  position: absolute;
+  height: 6px;
+  background-color: var(--blue-color);
+}
+
+/* Start Information */
+
+.profile-page .overview .information .info-box {
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.profile-page .overview .information .info-box:hover {
+  background-color: #f9f9f9;
+}
+
+.profile-page .overview .information .info-box:last-of-type {
+  border: none;
+}
+
+.profile-page .overview .information .info-box > div {
+  min-width: 250px;
+  padding-top: 10px;
+}
+
+.profile-page .overview .information .info-box .toggle-switch {
+  height: 20px;
+}
+
+.profile-page .overview .information .info-box .toggle-switch::before {
+  width: 12px;
+  height: 12px;
+  font-size: 8px;
+}
+
+.profile-page
+  .overview
+  .information
+  .info-box
+  .toggle-checkbox:checked
+  + .toggle-switch::before {
+  left: 62px;
+}
+
+/* End Information */
+
+@media (min-width: 768px) {
+  .profile-page .avatar {
+    border-right: 1px solid #eee;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-page .overview {
+    flex-direction: column;
+  }
+  .profile-page .overview .information .info-box {
+    justify-content: center;
+  }
+  .profile-page .overview .information .info-box > div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* End Overview */
+
+/* Start My Skills & Latest Activities */
+
+.profile-page .skills-activities ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.profile-page .skills-activities .my-skills ul li span:not(:last-child) {
+  margin-right: 5px;
+}
+
+.profile-page .skills-activities .latest-activities ul li img {
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+
+.profile-page .latest-activities ul li:not(:last-of-type) {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+  .profile-page .skills-activities {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 767px) {
+  .profile-page .skills-activities .latest-activities ul li .date {
+    text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-page .skills-activities .latest-activities ul li {
+    flex-direction: column;
+  }
+  .profile-page .skills-activities .latest-activities ul li div {
+    flex-direction: column;
+  }
+  .profile-page .skills-activities .latest-activities ul li img {
+    margin: 0 0 10px;
+  }
+  .profile-page .skills-activities .latest-activities ul li .date {
+    margin-top: 15px;
+  }
+  .profile-page .skills-activities .my-skills {
+    text-align: center;
+  }
+}
+
+/* End My Skills & Latest Activities */
+
+/* End Profile Page */
 
 /* Start Animation */
 
