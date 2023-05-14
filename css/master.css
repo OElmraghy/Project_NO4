@@ -1075,6 +1075,10 @@ a {
   padding-top: 10px;
 }
 
+.profile-page .overview .information .info-box h4 {
+  font-weight: normal;
+}
+
 .profile-page .overview .information .info-box .toggle-switch {
   height: 20px;
 }
@@ -1169,8 +1173,117 @@ a {
 }
 
 /* End My Skills & Latest Activities */
-
 /* End Profile Page */
+
+/* Start Projects Page */
+
+.projects-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .projects-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+
+.projects-page .project .date {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.projects-page .project h4 {
+  font-weight: normal;
+}
+
+.projects-page .project .team-img {
+  min-height: 80px;
+}
+
+.projects-page .project .team-img img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+}
+
+.projects-page .project .team-img a:nth-child(2) {
+  left: 25px;
+}
+.projects-page .project .team-img a:nth-child(3) {
+  left: 50px;
+}
+.projects-page .project .team-img a:nth-child(4) {
+  left: 75px;
+}
+.projects-page .project .team-img a:nth-child(5) {
+  left: 100px;
+}
+
+.projects-page .project .team-img a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.projects-page .project .team-img a:hover {
+  z-index: 4444;
+}
+
+.projects-page .project .done {
+  border-top: 1px solid #eee;
+  justify-content: flex-end;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.projects-page .project .done span:not(:last-child) {
+  margin-right: 5px;
+}
+
+.projects-page .project .info {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.projects-page .project .info .progress {
+  height: 8px;
+  width: 260px;
+}
+
+.projects-page .project .info .progress span {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.projects-page .project .info .price span::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\24";
+  font-weight: 900;
+  margin-right: 3px;
+}
+
+@media (max-width: 767px) {
+  .projects-page .project .done {
+    flex-direction: column;
+  }
+  .projects-page .project .done span:not(:last-child) {
+    margin: 0 0 15px;
+  }
+  .projects-page .project .info {
+    flex-direction: column;
+  }
+  .projects-page .project .info .progress {
+    margin-bottom: 15px;
+  }
+}
+
+/* End Projects Page */
 
 /* Start Animation */
 
